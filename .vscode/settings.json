@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.vscode": true,
+        "**/.next": true,
+        "**/.dependabot": true,
+        "**/build": true,
+        "**/node_modules": true,
+        "**/yarn-error.log": true
+    },
+    "files.watcherExclude": {
+        "**/build/**": true
+    },
+    "files.associations": {
+        ".czrc": "json",
+        ".releaserc": "json"
+    },
+}
