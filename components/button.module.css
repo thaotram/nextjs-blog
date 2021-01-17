@@ -1,0 +1,6 @@
+.btn {
+    background-color: lightblue;
+    color: lightslategrey;
+    @apply p-2;
+    @apply border border-blue-500 bg-blue-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 select-none hover:bg-blue-600 focus:outline-none focus:shadow-sm;
+}

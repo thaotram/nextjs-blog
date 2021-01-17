@@ -1,5 +1,5 @@
-import styles from './button.module.scss';
+import styles from './button.module.css';
 
-export function Button(props) {
-    return <button className={styles.btn}>{props.children}</button>;
+export function Button({ children }) {
+    return <button className={styles.btn}>{children}</button>;
 }
