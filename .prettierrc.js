@@ -17,6 +17,7 @@ module.exports = {
                 '.babelrc',
                 '.czrc',
                 '.releaserc',
+                '.stylelintrc',
                 '*.code-workspace',
             ],
             options: { parser: 'json' },
