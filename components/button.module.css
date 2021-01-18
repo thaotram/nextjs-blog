@@ -1,9 +1,26 @@
 .btn {
     @apply flex items-center;
-    @apply bg-red-400 hover:bg-red-500 font-semibold text-white;
-    @apply border-0 rounded-md;
-    @apply py-2 px-3;
-    @apply cursor-pointer;
+    @apply h-6;
+    @apply px-1 py-0;
     @apply truncate;
-    @apply focus:bg-red-500 focus:outline-none focus:ring-4 ring-red-500 ring-opacity-50;
+    @apply border-0 rounded;
+    @apply cursor-pointer;
+    @apply focus:outline-none;
+    @apply text-white bg-gray-800 hover:bg-gray-700;
+
+    > div {
+        @apply mx-1 my-0;
+    }
+
+    > svg {
+        @apply w-4 h-4;
+    }
+}
+
+.blue {
+    @apply bg-blue-800 hover:bg-blue-700;
+}
+
+.red {
+    @apply bg-red-800 hover:bg-red-700;
 }

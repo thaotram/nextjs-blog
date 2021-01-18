@@ -1,5 +1,20 @@
 import styles from './button.module.css';
+import cn from 'classnames';
 
-export function Button({ children }) {
-    return <button className={styles.btn}>{children}</button>;
+export function Button({
+    text,
+    color,
+    prefixIcon: PrefixIcon,
+    suffixIcon: SuffixIcon,
+}) {
+    return (
+        <button className={cn(styles.btn, {
+            [styles.red]: color === 'red',
+            [styles.blue]: color === 'blue',
+        })}>
+            {PrefixIcon && <PrefixIcon />}
+            {text && <div>{text}</div>}
+            {SuffixIcon && <SuffixIcon />}
+        </button>
+    );
 }
