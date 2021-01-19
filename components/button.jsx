@@ -6,9 +6,11 @@ export function Button({
     color,
     prefixIcon: PrefixIcon,
     suffixIcon: SuffixIcon,
+    onClick,
 }) {
     return (
         <button
+            onClick={onClick}
             className={cn(styles.btn, {
                 [styles.red]: color === 'red',
                 [styles.blue]: color === 'blue',
