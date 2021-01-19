@@ -1,4 +1,4 @@
-import styles from './TeamHeader.module.css';
+import styles from './TeamHeader.module.scss';
 import { ChevronDown, RotateCw } from 'react-feather';
 import { Button } from './Button';
 

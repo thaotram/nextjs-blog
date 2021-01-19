@@ -1,4 +1,4 @@
-import styles from './UserTableRow.module.css';
+import styles from './UserTableRow.module.scss';
 import cn from 'classnames';
 
 const getColor = progress => {

@@ -1,4 +1,4 @@
-import styles from './UserTable.module.css';
+import styles from './UserTable.module.scss';
 import { UserTableRow } from './UserTableRow';
 
 export const UserTable = props => {
