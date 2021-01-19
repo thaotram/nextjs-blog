@@ -2,7 +2,7 @@ import styles from './TeamHeader.module.scss';
 import { ChevronDown, RotateCw } from 'react-feather';
 import { Button } from './Button';
 
-export const TeamHeader = () => {
+export const TeamHeader = props => {
     return (
         <div className={styles['team-header']}>
             <div className={styles['team-header-left']}>
@@ -12,7 +12,7 @@ export const TeamHeader = () => {
                 </div>
                 <Button text="Sales Boston" suffixIcon={ChevronDown}></Button>
             </div>
-            <Button prefixIcon={RotateCw}></Button>
+            <Button onClick={props.onRefresh} prefixIcon={RotateCw}></Button>
         </div>
     );
 };
