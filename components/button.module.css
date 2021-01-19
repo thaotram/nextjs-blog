@@ -1,12 +1,12 @@
 .btn {
     @apply flex items-center;
-    @apply h-6;
+    @apply h-6 text-sm;
     @apply px-1 py-0;
     @apply truncate;
     @apply border-0 rounded;
     @apply cursor-pointer;
     @apply focus:outline-none;
-    @apply text-white bg-gray-800 hover:bg-gray-700;
+    @apply text-blue-light hover:bg-gray bg-gray-dark;
 
     > div {
         @apply mx-1 my-0;
@@ -18,9 +18,9 @@
 }
 
 .blue {
-    @apply bg-blue-800 hover:bg-blue-700;
+    @apply hover:bg-blue-700 bg-blue-800;
 }
 
 .red {
-    @apply bg-red-800 hover:bg-red-700;
+    @apply hover:bg-red-700 bg-red-800;
 }
