@@ -14,15 +14,7 @@ export const UserTableRow = props => {
     const color = getColor(progress);
 
     return (
-        <tr
-            className={cn(styles['user-table-row'], {
-                [styles['color-gray']]: color == 1,
-                [styles['color-pink']]: color == 2,
-                [styles['color-purple']]: color == 3,
-                [styles['color-blue']]: color == 4,
-                [styles['color-green']]: color == 5,
-            })}
-        >
+        <tr className={cn(styles['user-table-row'], styles[`color-${color}`])}>
             <td>
                 <img
                     className={styles['avatar']}
