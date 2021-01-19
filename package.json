@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "tailwind": "tailwind-config-viewer -o -p 4000",
     "fix:prettier": "prettier ** --write"
   },
   "dependencies": {
@@ -30,6 +31,7 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
+    "tailwind-config-viewer": "^1.4.0",
     "tailwindcss": "^2.0.2"
   }
 }
