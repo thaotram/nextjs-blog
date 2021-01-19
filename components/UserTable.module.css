@@ -1,0 +1,38 @@
+.user-table {
+    @apply w-full;
+    @apply text-sm;
+    @apply text-left;
+    @apply border-collapse;
+
+    $user-table-padding: 0.875rem;
+
+    > thead > tr > th {
+        padding: $user-table-padding;
+        font-weight: 500;
+        border-bottom: 1px solid #434448;
+    }
+
+    > thead > tr > th:first-child {
+        padding-left: calc($user-table-padding * 2);
+    }
+
+    > thead > tr > th:last-child {
+        padding-right: calc($user-table-padding * 2);
+    }
+
+    > tbody > tr > td {
+        padding: $user-table-padding;
+    }
+
+    > tbody > tr > td:first-child {
+        padding-left: calc($user-table-padding * 2);
+    }
+
+    > tbody > tr:first-child > td {
+        padding-top: calc($user-table-padding * 2);
+    }
+
+    > tbody > tr:last-child > td {
+        padding-bottom: calc($user-table-padding * 2);
+    }
+}

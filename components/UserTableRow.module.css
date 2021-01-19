@@ -1,0 +1,43 @@
+.avatar {
+    @apply block;
+    @apply rounded-full;
+
+    width: 38px;
+    height: 38px;
+}
+
+.progress {
+    @apply flex;
+    @apply w-full;
+    @apply overflow-hidden;
+    @apply bg-gray;
+    @apply rounded;
+
+    min-width: 9rem;
+    height: 8px;
+}
+
+.progress-bar {
+    background-color: var(--progress-color);
+    border-radius: 4px;
+}
+
+.color-gray {
+    --progress-color: #717171;
+}
+
+.color-pink {
+    --progress-color: #cd45a2;
+}
+
+.color-purple {
+    --progress-color: #8145cd;
+}
+
+.color-blue {
+    --progress-color: #4d53d9;
+}
+
+.color-green {
+    --progress-color: #13cd3c;
+}

@@ -1,14 +1,9 @@
-import { Button } from '../components/button';
-import { ChevronDown, RotateCw } from 'react-feather';
+import { Team } from '../components/team';
 
 export default function Index() {
     return (
-        <div>
-            <div className="p-3">
-                <Button text="Sales Boston" prefixIcon={ChevronDown} />
-                <Button text="Sales Boston" prefixIcon={ChevronDown} color="red" />
-                <Button text="Sales Boston" prefixIcon={ChevronDown} color="blue" />
-            </div>
+        <div className="flex justify-center p-8">
+            <Team />
         </div>
     );
 }
