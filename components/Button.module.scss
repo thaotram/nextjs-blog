@@ -1,0 +1,30 @@
+.btn {
+    @apply flex items-center;
+    @apply text-sm font-medium;
+    @apply p-2;
+    @apply truncate;
+    @apply border-0 rounded-lg;
+    @apply cursor-pointer;
+    @apply focus:outline-none;
+    @apply text-gray-900 hover:bg-gray-300 bg-gray-200;
+
+    > div {
+        @apply mx-1 my-0;
+    }
+
+    > svg {
+        @apply w-4 h-4;
+    }
+}
+
+.white {
+    @apply shadow-md hover:bg-gray-200 bg-white;
+}
+
+.blue {
+    @apply hover:bg-blue-700 bg-blue-800;
+}
+
+.red {
+    @apply hover:bg-red-700 bg-red-800;
+}
