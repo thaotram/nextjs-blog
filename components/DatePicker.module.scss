@@ -1,0 +1,39 @@
+.datepicker {
+    @apply p-6 bg-gray-50 rounded-3xl;
+
+    max-width: calc(theme('spacing.8') * 7 + theme('spacing.6') * 2);
+
+    &-navigator {
+        @apply flex flex-wrap -m-1;
+
+        > * {
+            @apply m-1;
+        }
+    }
+
+    &-month {
+        @apply flex items-center justify-between my-2;
+    }
+
+    &-weekdays {
+        @apply text-gray-500;
+    }
+
+    &-days {
+        div {
+            @apply rounded-full cursor-pointer;
+            @apply hover:bg-blue-200;
+        }
+    }
+
+    &-weekdays,
+    &-days {
+        @apply grid grid-cols-7;
+        @apply font-medium;
+
+        div {
+            @apply h-8 w-8;
+            @apply flex items-center justify-center;
+        }
+    }
+}
